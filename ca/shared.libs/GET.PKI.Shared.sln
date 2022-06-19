@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GET.PKI.Base", "base\GET.PKI.Base.csproj", "{71D3C68B-459E-45B0-93E9-C48FD78ABF46}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GET.PKI.Common", "common\GET.PKI.Common.csproj", "{02B035F5-8E4C-432B-809F-B15E9CD32877}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{71D3C68B-459E-45B0-93E9-C48FD78ABF46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71D3C68B-459E-45B0-93E9-C48FD78ABF46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71D3C68B-459E-45B0-93E9-C48FD78ABF46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71D3C68B-459E-45B0-93E9-C48FD78ABF46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02B035F5-8E4C-432B-809F-B15E9CD32877}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02B035F5-8E4C-432B-809F-B15E9CD32877}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02B035F5-8E4C-432B-809F-B15E9CD32877}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02B035F5-8E4C-432B-809F-B15E9CD32877}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8E253D58-4D7E-4C1A-9895-A42663C1E4D0}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://getegypidtfs:8080/tfs/get_sw
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = base\\GET.PKI.Base.csproj
+		SccProjectName1 = base
+		SccLocalPath1 = base
+		SccProjectUniqueName2 = common\\GET.PKI.Common.csproj
+		SccProjectName2 = common
+		SccLocalPath2 = common
+	EndGlobalSection
+EndGlobal

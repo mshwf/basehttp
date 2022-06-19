@@ -1,0 +1,6 @@
+﻿Role:
+ Services and microservices-related code
+
+ Thoughts:
+
+ Eliminate usage of Success/Failed Response, and instead explicitly set the status code

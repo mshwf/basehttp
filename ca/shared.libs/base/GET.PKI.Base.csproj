@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <EnableDefaultItems>false</EnableDefaultItems>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="GET.PKI.Base.csproj.vspscc" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Extensions\EnumDescriptionExtension.cs" />
+    <Compile Include="Models\BaseRequest.cs" />
+    <Compile Include="Models\HttpRequest.cs" />
+    <Compile Include="Models\Response.cs" />
+    <Compile Include="Models\ResponseT.cs" />
+    <Compile Include="Serialization.cs" />
+    <Compile Include="Services\BaseHttpService.cs" />
+    <Compile Include="Services\BaseService.cs" />
+    <Compile Include="Services\JwtProvider.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.14.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,3 @@
+﻿*This module contains shared code funtionalities, that can be used by other modules.
+*Please don't write business specific code here, shared business specific code should be put into Base module.
+*Shared/common means used (or may be used) by two or more modules.

@@ -1,0 +1,66 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="GET.PKI.Common.csproj.vspscc" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Constatnts\Attributes.cs" />
+    <Compile Include="Constatnts\CSRConstants.cs" />
+    <Compile Include="Constatnts\OidList.cs" />
+    <Compile Include="Constatnts\Pkcs11Attributes.cs" />
+    <Compile Include="Contracts\IRepository.cs" />
+    <Compile Include="Contracts\IVerifyFormat.cs" />
+    <Compile Include="Contracts\ISingleRecordRepository.cs" />
+    <Compile Include="Enums\RevocationReason.cs" />
+    <Compile Include="Exceptions\BaseException.cs" />
+    <Compile Include="Exceptions\BusinessExceptions\NotFoundException.cs" />
+    <Compile Include="Exceptions\ExceptionHandler.cs" />
+    <Compile Include="Exceptions\ExceptionsUtilities.cs" />
+    <Compile Include="Exceptions\HttpExceptions\GETHttpRequestException.cs" />
+    <Compile Include="Exceptions\Logger.cs" />
+    <Compile Include="ExtendedTypes\IgnoreCaseComparer.cs" />
+    <Compile Include="Extensions\ConfigurationExtensions.cs" />
+    <Compile Include="Extensions\HttpExtensions.cs" />
+    <Compile Include="Extensions\SimpleTypesExtensions.cs" />
+    <Compile Include="Models\ModelBag.cs" />
+    <Compile Include="Utilities\CryptoHelper.cs" />
+    <Compile Include="Utilities\HTTPRequest.cs" />
+    <Compile Include="Utilities\HttpUtilities.cs" />
+    <Compile Include="Utilities\OidDictionary.cs" />
+    <Compile Include="Utilities\Singleton.cs" />
+    <Compile Include="Utilities\X509Utilities.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resources\AppResources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AppResources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\AppResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
